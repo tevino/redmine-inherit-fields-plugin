@@ -14,7 +14,6 @@ module SubtasksInheritedFields
       receiver.send :include, InstanceMethods
  
       receiver.class_eval do
-        unloadable
         alias_method :link_to_new_subtask, :link_to_new_subtask_plugin
       end
     end

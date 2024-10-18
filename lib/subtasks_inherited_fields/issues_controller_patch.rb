@@ -33,7 +33,6 @@ module SubtasksInheritedFields
       receiver.send :include, InstanceMethods
  
       receiver.class_eval do
-        unloadable
         alias_method :redirect_after_create, :redirect_after_create_plugin
       end
     end
